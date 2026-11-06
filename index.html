@@ -123,6 +123,18 @@ section{padding:84px 0}
 .channels .btn[hidden]{display:none}
 .channels .pending{background:rgba(255,255,255,.12);border-radius:14px;padding:16px 18px;color:#fff;font-size:.98rem}
 
+
+/* FAQ */
+#faq{background:var(--white);border-block:1px solid var(--line)}
+.faq{display:grid;gap:12px;max-width:760px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:4px 20px}
+.faq summary{cursor:pointer;font:700 1.05rem/1.4 var(--font-display);padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--violet)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p,.faq details ul{color:var(--muted);padding-bottom:16px;font-size:1rem}
+.faq details ul{padding-left:20px}
+
 /* Footer */
 footer{padding:36px 0 48px;color:var(--muted);font-size:.93rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:26px}
@@ -253,6 +265,37 @@ footer strong{color:var(--ink);font-family:var(--font-display)}
         <div class="step"><h3>Choisissez</h3><p>Parcourez les produits et sélectionnez le pack qui vous convient.</p></div>
         <div class="step"><h3>Commandez</h3><p>Contactez-nous pour confirmer le prix et le moyen de paiement.</p></div>
         <div class="step"><h3>Recevez</h3><p>Dès que le paiement est confirmé, nous vous envoyons le lien de téléchargement.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Questions fréquentes</h2>
+        <p>Tout ce qu'il faut savoir avant de commander.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Comment est livré le produit ?</summary>
+          <p>Après confirmation de votre paiement, nous vous envoyons un lien de téléchargement par WhatsApp ou par e-mail.</p>
+        </details>
+        <details>
+          <summary>Comment puis-je payer ?</summary>
+          <p>Écrivez-nous sur WhatsApp ou par e-mail : nous vous indiquons les moyens de paiement disponibles. Les clients internationaux peuvent demander un lien de paiement sécurisé.</p>
+        </details>
+        <details>
+          <summary>Que puis-je faire avec les modèles ?</summary>
+          <ul>
+            <li>Les modifier (textes, couleurs, images, logo) pour votre activité ou vos études.</li>
+            <li>Les utiliser pour vos propres publications, affiches et présentations.</li>
+            <li>Vous ne pouvez pas les revendre, les partager ni les publier en téléchargement.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Puis-je être remboursé ?</summary>
+          <p>Un produit numérique ne peut pas être rendu. Si le fichier ne s'ouvre pas ou ne correspond pas à sa description, écrivez-nous dans les 7 jours : nous le corrigeons ou nous vous remboursons.</p>
+        </details>
       </div>
     </div>
   </section>
