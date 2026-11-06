@@ -135,6 +135,15 @@ section{padding:84px 0}
 .faq details p,.faq details ul{color:var(--muted);padding-bottom:16px;font-size:1rem}
 .faq details ul{padding-left:20px}
 
+
+/* Corrections mobile */
+nav.main a.btn-primary,nav.main a.btn-primary:hover{color:#fff}
+.featured>*,.featured .copy,.preview{min-width:0}
+@media (max-width:900px){
+  .hero .wrap,.featured,#contact .box{grid-template-columns:minmax(0,1fr)}
+  .featured{padding:28px 22px}
+}
+
 /* Footer */
 footer{padding:36px 0 48px;color:var(--muted);font-size:.93rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:26px}
